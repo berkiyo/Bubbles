@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		60929EBA2A225D9C00E4AF37 /* BubblesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60929EB92A225D9C00E4AF37 /* BubblesApp.swift */; };
-		60929EBC2A225D9C00E4AF37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60929EBB2A225D9C00E4AF37 /* ContentView.swift */; };
+		60929EBC2A225D9C00E4AF37 /* LevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60929EBB2A225D9C00E4AF37 /* LevelView.swift */; };
 		60929EBE2A225D9D00E4AF37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60929EBD2A225D9D00E4AF37 /* Assets.xcassets */; };
 		60929EC22A225D9D00E4AF37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60929EC12A225D9D00E4AF37 /* Preview Assets.xcassets */; };
 		60929ECC2A225D9D00E4AF37 /* BubblesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60929ECB2A225D9D00E4AF37 /* BubblesTests.swift */; };
 		60929ED62A225D9D00E4AF37 /* BubblesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60929ED52A225D9D00E4AF37 /* BubblesUITests.swift */; };
 		60929ED82A225D9D00E4AF37 /* BubblesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60929ED72A225D9D00E4AF37 /* BubblesUITestsLaunchTests.swift */; };
+		60929EE62A225FA300E4AF37 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60929EE52A225FA300E4AF37 /* HomeView.swift */; };
+		60929EE82A225FC300E4AF37 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60929EE72A225FC300E4AF37 /* SettingsView.swift */; };
+		60929EEA2A225FF800E4AF37 /* ChangeAppIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60929EE92A225FF800E4AF37 /* ChangeAppIconView.swift */; };
+		60929EEC2A22601D00E4AF37 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60929EEB2A22601D00E4AF37 /* AboutView.swift */; };
+		60929EEF2A22610700E4AF37 /* ChangeAppIconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60929EEE2A22610700E4AF37 /* ChangeAppIconViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,7 @@
 /* Begin PBXFileReference section */
 		60929EB62A225D9C00E4AF37 /* Bubbles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bubbles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60929EB92A225D9C00E4AF37 /* BubblesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubblesApp.swift; sourceTree = "<group>"; };
-		60929EBB2A225D9C00E4AF37 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		60929EBB2A225D9C00E4AF37 /* LevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelView.swift; sourceTree = "<group>"; };
 		60929EBD2A225D9D00E4AF37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60929EBF2A225D9D00E4AF37 /* Bubbles.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bubbles.entitlements; sourceTree = "<group>"; };
 		60929EC12A225D9D00E4AF37 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +50,11 @@
 		60929ED12A225D9D00E4AF37 /* BubblesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BubblesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60929ED52A225D9D00E4AF37 /* BubblesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubblesUITests.swift; sourceTree = "<group>"; };
 		60929ED72A225D9D00E4AF37 /* BubblesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubblesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		60929EE52A225FA300E4AF37 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		60929EE72A225FC300E4AF37 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		60929EE92A225FF800E4AF37 /* ChangeAppIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAppIconView.swift; sourceTree = "<group>"; };
+		60929EEB2A22601D00E4AF37 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		60929EEE2A22610700E4AF37 /* ChangeAppIconViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAppIconViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +105,9 @@
 		60929EB82A225D9C00E4AF37 /* Bubbles */ = {
 			isa = PBXGroup;
 			children = (
+				60929EED2A2260F800E4AF37 /* ViewModels */,
+				60929EE42A225F9500E4AF37 /* Views */,
 				60929EB92A225D9C00E4AF37 /* BubblesApp.swift */,
-				60929EBB2A225D9C00E4AF37 /* ContentView.swift */,
 				60929EBD2A225D9D00E4AF37 /* Assets.xcassets */,
 				60929EBF2A225D9D00E4AF37 /* Bubbles.entitlements */,
 				60929EC02A225D9D00E4AF37 /* Preview Content */,
@@ -127,6 +138,26 @@
 				60929ED72A225D9D00E4AF37 /* BubblesUITestsLaunchTests.swift */,
 			);
 			path = BubblesUITests;
+			sourceTree = "<group>";
+		};
+		60929EE42A225F9500E4AF37 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				60929EBB2A225D9C00E4AF37 /* LevelView.swift */,
+				60929EE52A225FA300E4AF37 /* HomeView.swift */,
+				60929EE72A225FC300E4AF37 /* SettingsView.swift */,
+				60929EE92A225FF800E4AF37 /* ChangeAppIconView.swift */,
+				60929EEB2A22601D00E4AF37 /* AboutView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		60929EED2A2260F800E4AF37 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				60929EEE2A22610700E4AF37 /* ChangeAppIconViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +290,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60929EBC2A225D9C00E4AF37 /* ContentView.swift in Sources */,
+				60929EEA2A225FF800E4AF37 /* ChangeAppIconView.swift in Sources */,
+				60929EEF2A22610700E4AF37 /* ChangeAppIconViewModel.swift in Sources */,
+				60929EE62A225FA300E4AF37 /* HomeView.swift in Sources */,
+				60929EE82A225FC300E4AF37 /* SettingsView.swift in Sources */,
+				60929EBC2A225D9C00E4AF37 /* LevelView.swift in Sources */,
+				60929EEC2A22601D00E4AF37 /* AboutView.swift in Sources */,
 				60929EBA2A225D9C00E4AF37 /* BubblesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
