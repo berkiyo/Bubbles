@@ -7,43 +7,71 @@
 
 import SwiftUI
 import CoreMotion
+import UIKit
 
+import SwiftUI
+import CoreMotion
 
 struct LevelView: View {
     @ObservedObject var motionManager = MotionManager()
     
     var body: some View {
-        
         ZStack {
+            Color.blue
+                .edgesIgnoringSafeArea(.all)
+            
             VStack {
-                Text("Bubbles App Demo")
-                    .font(.title)
-                    .bold()
-                    .padding()
+                Text("Leveler")
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+                    .padding(.top, 50)
                 
-                Divider()
-                    .padding()
+                Spacer()
                 
-                Text("X-Axis: \(motionManager.roll)")
-                    .font(.title)
+                HStack {
+                    LevelerIndicator(angle: CGFloat(motionManager.roll))
+                    LevelerIndicator(angle: CGFloat(motionManager.pitch))
+                }
                 
-                Text("Y-Axis: \(motionManager.pitch)")
-                    .font(.title)
+                Spacer()
                 
-                Circle()
-                    .frame(width: 200, height: 200)
-                    .foregroundColor(.blue)
-                    .overlay(
-                        Circle()
-                            .frame(width: 10, height: 10)
-                            .foregroundColor(.white)
-                            .offset(x: CGFloat(motionManager.roll) * 90, y: CGFloat(motionManager.pitch) * 90)
-                    )
+                HStack {
+                    LevelerLabel(title: "Roll", value: "\(motionManager.roll)", color: .yellow)
+                    LevelerLabel(title: "Pitch", value: "\(motionManager.pitch)", color: .orange)
+                }
+                .padding(.bottom, 50)
             }
-            .padding()
-            // END VSTACK
-        } // END ZSTACK
-        
+        }
+    }
+}
+
+struct LevelerIndicator: View {
+    var angle: CGFloat
+    
+    var body: some View {
+        RoundedRectangle(cornerRadius: 10)
+            .frame(width: 10, height: 100)
+            .foregroundColor(.white)
+            .rotationEffect(Angle(degrees: Double(angle)))
+    }
+}
+
+struct LevelerLabel: View {
+    var title: String
+    var value: String
+    var color: Color
+    
+    var body: some View {
+        VStack {
+            Text(title)
+                .font(.title2)
+                .foregroundColor(.white)
+            
+            Text(value)
+                .font(.title)
+                .foregroundColor(color)
+        }
+        .padding(.horizontal, 20)
     }
 }
 
@@ -71,7 +99,6 @@ class MotionManager: ObservableObject {
         }
     }
 }
-
 
 struct LevelView_Previews: PreviewProvider {
     static var previews: some View {

@@ -19,6 +19,7 @@
 		60929EEA2A225FF800E4AF37 /* ChangeAppIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60929EE92A225FF800E4AF37 /* ChangeAppIconView.swift */; };
 		60929EEC2A22601D00E4AF37 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60929EEB2A22601D00E4AF37 /* AboutView.swift */; };
 		60929EEF2A22610700E4AF37 /* ChangeAppIconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60929EEE2A22610700E4AF37 /* ChangeAppIconViewModel.swift */; };
+		60929EF92A22631600E4AF37 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60929EF82A22631600E4AF37 /* DoubleExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		60929EE92A225FF800E4AF37 /* ChangeAppIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAppIconView.swift; sourceTree = "<group>"; };
 		60929EEB2A22601D00E4AF37 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		60929EEE2A22610700E4AF37 /* ChangeAppIconViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAppIconViewModel.swift; sourceTree = "<group>"; };
+		60929EF82A22631600E4AF37 /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		60929EB82A225D9C00E4AF37 /* Bubbles */ = {
 			isa = PBXGroup;
 			children = (
+				60929EF72A22630A00E4AF37 /* Extensions */,
 				60929EED2A2260F800E4AF37 /* ViewModels */,
 				60929EE42A225F9500E4AF37 /* Views */,
 				60929EB92A225D9C00E4AF37 /* BubblesApp.swift */,
@@ -158,6 +161,14 @@
 				60929EEE2A22610700E4AF37 /* ChangeAppIconViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		60929EF72A22630A00E4AF37 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				60929EF82A22631600E4AF37 /* DoubleExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +304,7 @@
 				60929EEA2A225FF800E4AF37 /* ChangeAppIconView.swift in Sources */,
 				60929EEF2A22610700E4AF37 /* ChangeAppIconViewModel.swift in Sources */,
 				60929EE62A225FA300E4AF37 /* HomeView.swift in Sources */,
+				60929EF92A22631600E4AF37 /* DoubleExtension.swift in Sources */,
 				60929EE82A225FC300E4AF37 /* SettingsView.swift in Sources */,
 				60929EBC2A225D9C00E4AF37 /* LevelView.swift in Sources */,
 				60929EEC2A22601D00E4AF37 /* AboutView.swift in Sources */,
