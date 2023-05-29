@@ -17,31 +17,32 @@ struct LevelView: View {
     
     var body: some View {
         ZStack {
-            Color.blue
-                .edgesIgnoringSafeArea(.all)
             
             VStack {
                 Text("Leveler")
                     .font(.largeTitle)
-                    .foregroundColor(.white)
                     .padding(.top, 50)
                 
                 Spacer()
                 
                 HStack {
                     LevelerIndicator(angle: CGFloat(motionManager.roll))
-                    LevelerIndicator(angle: CGFloat(motionManager.pitch))
-                }
+                        .padding()
+                    LevelerIndicator(angle: CGFloat(motionManager.pitch).rounded(toPlaces: 2))
+                        .padding()
+                }// END HSTACK
                 
                 Spacer()
                 
                 HStack {
-                    LevelerLabel(title: "Roll", value: "\(motionManager.roll)", color: .yellow)
-                    LevelerLabel(title: "Pitch", value: "\(motionManager.pitch)", color: .orange)
-                }
+                    
+                    LevelerLabel(title: "Roll", value: "\((motionManager.roll).rounded(toPlaces: 1))")
+                    
+                    LevelerLabel(title: "Pitch", value: "\((motionManager.pitch).rounded(toPlaces: 1))")
+                } // END HSTACK
                 .padding(.bottom, 50)
-            }
-        }
+            } // END VSTACK
+        } // END VIEW
     }
 }
 
@@ -50,8 +51,8 @@ struct LevelerIndicator: View {
     
     var body: some View {
         RoundedRectangle(cornerRadius: 10)
-            .frame(width: 10, height: 100)
-            .foregroundColor(.white)
+            .frame(width: 20, height: 150)
+            .foregroundColor(.accentColor)
             .rotationEffect(Angle(degrees: Double(angle)))
     }
 }
@@ -59,17 +60,14 @@ struct LevelerIndicator: View {
 struct LevelerLabel: View {
     var title: String
     var value: String
-    var color: Color
     
     var body: some View {
         VStack {
             Text(title)
                 .font(.title2)
-                .foregroundColor(.white)
             
             Text(value)
                 .font(.title)
-                .foregroundColor(color)
         }
         .padding(.horizontal, 20)
     }
