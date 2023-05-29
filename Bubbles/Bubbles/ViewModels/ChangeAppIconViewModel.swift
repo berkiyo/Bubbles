@@ -37,7 +37,7 @@ final class ChangeAppIconViewModel: ObservableObject {
         var description: String {
             switch self {
             case .primary:
-                return "Infinity"
+                return "Bubbles"
             case .appIcon2:
                 return "Bold"
             case .appIcon3:
