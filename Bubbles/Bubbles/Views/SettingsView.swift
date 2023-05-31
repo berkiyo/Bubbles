@@ -50,7 +50,7 @@ struct SettingsView: View {
                         
                         // About View
                         NavigationLink { AboutView() } label: {
-                            Text("🧐 About Infinity")
+                            Text("🧐 About Bubbles")
                         }
                         
                         
