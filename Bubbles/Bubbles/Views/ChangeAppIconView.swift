@@ -57,7 +57,7 @@ struct ChangeAppIconView: View {
                 VStack {
                     Text("Have a cool app icon design you want to share? Send an email!")
                         .font(.body)
-                        .padding(5)
+                        .padding(15)
                     
                     Button(action: {
                         Task {
@@ -70,7 +70,7 @@ struct ChangeAppIconView: View {
                         }
                     }
                     .padding()
-                    .background(.blue)
+                    .background(.green)
                     .foregroundColor(.white)
                     .cornerRadius(22)
                     .shadow(radius: 10)

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		604D60F42A278225001E7BA9 /* AppIcon-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 604D60F32A278225001E7BA9 /* AppIcon-1.png */; };
+		604D60F62A278233001E7BA9 /* AppIcon-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 604D60F52A278233001E7BA9 /* AppIcon-2.png */; };
+		604D60F82A278238001E7BA9 /* AppIcon-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 604D60F72A278238001E7BA9 /* AppIcon-3.png */; };
 		60929EBA2A225D9C00E4AF37 /* BubblesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60929EB92A225D9C00E4AF37 /* BubblesApp.swift */; };
 		60929EBC2A225D9C00E4AF37 /* LevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60929EBB2A225D9C00E4AF37 /* LevelView.swift */; };
 		60929EBE2A225D9D00E4AF37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60929EBD2A225D9D00E4AF37 /* Assets.xcassets */; };
@@ -40,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		604D60F32A278225001E7BA9 /* AppIcon-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-1.png"; sourceTree = "<group>"; };
+		604D60F52A278233001E7BA9 /* AppIcon-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-2.png"; sourceTree = "<group>"; };
+		604D60F72A278238001E7BA9 /* AppIcon-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-3.png"; sourceTree = "<group>"; };
 		60929EB62A225D9C00E4AF37 /* Bubbles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bubbles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60929EB92A225D9C00E4AF37 /* BubblesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubblesApp.swift; sourceTree = "<group>"; };
 		60929EBB2A225D9C00E4AF37 /* LevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelView.swift; sourceTree = "<group>"; };
@@ -84,6 +90,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		604D60F22A2781F8001E7BA9 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				604D60F32A278225001E7BA9 /* AppIcon-1.png */,
+				604D60F52A278233001E7BA9 /* AppIcon-2.png */,
+				604D60F72A278238001E7BA9 /* AppIcon-3.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
 		60929EAD2A225D9C00E4AF37 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +123,7 @@
 		60929EB82A225D9C00E4AF37 /* Bubbles */ = {
 			isa = PBXGroup;
 			children = (
+				604D60F22A2781F8001E7BA9 /* Icons */,
 				60929EF72A22630A00E4AF37 /* Extensions */,
 				60929EED2A2260F800E4AF37 /* ViewModels */,
 				60929EE42A225F9500E4AF37 /* Views */,
@@ -276,7 +293,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				60929EC22A225D9D00E4AF37 /* Preview Assets.xcassets in Resources */,
+				604D60F62A278233001E7BA9 /* AppIcon-2.png in Resources */,
 				60929EBE2A225D9D00E4AF37 /* Assets.xcassets in Resources */,
+				604D60F42A278225001E7BA9 /* AppIcon-1.png in Resources */,
+				604D60F82A278238001E7BA9 /* AppIcon-3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Bubbles/Bubbles.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -497,6 +518,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Bubbles/Bubbles.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
