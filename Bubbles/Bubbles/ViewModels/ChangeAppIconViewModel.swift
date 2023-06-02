@@ -39,9 +39,9 @@ final class ChangeAppIconViewModel: ObservableObject {
             case .primary:
                 return "Bubbles"
             case .appIcon2:
-                return "Dark"
+                return "Parallel"
             case .appIcon3:
-                return "Ocean"
+                return "Dark"
             }
         }
 
