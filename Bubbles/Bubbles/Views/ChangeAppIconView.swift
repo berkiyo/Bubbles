@@ -54,28 +54,6 @@ struct ChangeAppIconView: View {
                 .padding(.horizontal, 30)
                 .padding(.bottom, 5)
                 
-                VStack {
-                    Text("Have a cool app icon design you want to share? Send an email!")
-                        .font(.body)
-                        .padding(15)
-                    
-                    Button(action: {
-                        Task {
-                            Link("✉️ Give Feedback", destination: URL(string: "mailto:mail@berkdogan.com")!)
-                        }
-                    }) {
-                        VStack {
-                            Text("Submit Feedback")
-                                .bold()
-                        }
-                    }
-                    .padding()
-                    .background(.green)
-                    .foregroundColor(.white)
-                    .cornerRadius(22)
-                    .shadow(radius: 10)
-                }
-                .padding()
             
             Spacer()
             
